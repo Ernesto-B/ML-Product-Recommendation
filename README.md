@@ -38,7 +38,7 @@ performance.
 
 ## Dataset
 The dataset used to train, test, and validate the model can be downloaded and
-found at: https://www.kaggle.com/datasets/kartikeybartwal/ecommerce-productrecommendation-collaborative or directly from my project repository at
+found at: https://www.kaggle.com/datasets/kartikeybartwal/ecommerce-product-recommendation-collaborative or directly from my project repository at
 https://github.com/Ernesto-B/ML-Product-Recommendation > `user_personalized_features.csv`
 
 ## Models Used
