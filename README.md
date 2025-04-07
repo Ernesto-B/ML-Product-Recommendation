@@ -1,4 +1,14 @@
 # ML-Product-Recommendation
+
+- [ML-Product-Recommendation](#ml-product-recommendation)
+  - [Problem](#problem)
+  - [Plan of Attack](#plan-of-attack)
+  - [Dataset](#dataset)
+  - [Models Used](#models-used)
+  - [Frameworks](#frameworks)
+  - [Running the Project](#running-the-project)
+
+
 ## Problem
 Emazon Online Shopping is a startup company with an e-commerce application.
 They are attempting to increase their revenue through increased sales of their products.
@@ -20,16 +30,13 @@ for their business but also drive customer satisfaction and loyalty due to the i
 marketing, tailored promotional offers, and targeted product recommendations. 
 
 ## Plan of Attack
-1. Data Processing: cleaning up and transforming the dataset. Possibly engineering
-new features.
-2. Model Training: train the three models.
-3. Hyperparameter Tuning: use cross-validation to optimize each model’s
+1. Data Processing: loading, cleaning up and transforming the dataset. Possibly engineering new features. Feature matrix and target vector preprocessing.
+1. Model Training: train the models.
+2. Hyperparameter Tuning: use GridSearchCV to optimize each model’s
 performance.
-4. Evaluation: Compare each model's performance across metrics such as accuracy,
-F1 score, precision and recall and conclude the best model to use for this project’s
-purpose. 
+1. Evaluation: Compare each model's performance across metrics such as accuracy, F1 score, precision and recall and conclude the best model to use for this project’s purpose. 
 
-Dataset
+## Dataset
 The dataset used to train, test, and validate the model can be downloaded and
 found at: https://www.kaggle.com/datasets/kartikeybartwal/ecommerce-productrecommendation-collaborative or directly from my project repository at
 https://github.com/Ernesto-B/ML-Product-Recommendation > `user_personalized_features.csv`
@@ -37,11 +44,26 @@ https://github.com/Ernesto-B/ML-Product-Recommendation > `user_personalized_feat
 ## Models Used
 - Logistic Regression (linear).
 - Random Forest (non-linear).
-- Gradient Boosting (non-linear). 
+- Gradient Boosting (non-linear).
+- Support Vector Classifier (SVC), (non-linear).
+- K-Nearest-Neighbours (KNN), (non-linear).
+- MLP Neural Network (non-linear).
 
 ## Frameworks
 - Scikit-learn
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborne
+- Seaborn
+
+## Running the Project
+1. Clone the repo and CD into it.
+2. Create a venv or conda environment:
+   ```bash
+   python -m venv .venv
+   ```
+3. Download dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Open `main.ipynb` and click 'Run All'. When prompted to select a kernel, select the '.venv' you just made.
